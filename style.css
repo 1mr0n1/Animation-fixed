@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation-name: travel;
+    animation-duration: 9s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes travel {
+    0% {
+        transform: translateX(0px);
+    }
+
+    10% {
+        transform: translateX(250px);
+    }
+
+    20% {
+        transform: translate(250px, 250px);
+    }
+
+    30% {
+        transform: translate(750px, 250px);
+    }
+
+    40% {
+        transform: translate(750px, 400px);
+    }
+
+    50% {
+        transform: translate(425px, 400px);
+    }
+
+    60% {
+        transform: translate(425px, 350px);
+    }
+
+    70% {
+        transform: translate(325px, 350px);
+    }
+
+    80% {
+        transform: translate(225px, 250px);
+    }
+
+    90% {
+        transform: translate(10px, 250px);
+    }
+
+    100% {
+        transform: translate(225.8, 250);
+    }
+}
+
